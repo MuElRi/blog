@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29a9629d-9f62-417c-a309-e31fb0dba768" name="Changes" comment="Начальная версия приложения">
-      <change afterPath="$PROJECT_DIR$/blog/templates/pagination.html" afterDir="false" />
+    <list default="true" id="29a9629d-9f62-417c-a309-e31fb0dba768" name="Changes" comment="Начальная версия приложения. Нет рекомендаций постов по эл почте">
+      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post/share.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/post/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogging/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogging/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogging/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogging/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,24 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.blogging.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.blogging.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eldar/pythonProject/Decision theory/lab_2.py&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="blogging" type="Python.DjangoServer" factoryName="Django server">
       <module name="blogging" />
@@ -97,7 +100,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -129,7 +132,34 @@
       <workItem from="1706332480083" duration="7887000" />
       <workItem from="1706379030173" duration="3985000" />
       <workItem from="1706637803825" duration="923000" />
-      <workItem from="1706718867467" duration="4647000" />
+      <workItem from="1706718867467" duration="5374000" />
+      <workItem from="1706762350631" duration="2575000" />
+      <workItem from="1706853182112" duration="1361000" />
+      <workItem from="1706943040982" duration="6397000" />
+      <workItem from="1707032304915" duration="4144000" />
+      <workItem from="1707291399121" duration="13000" />
+      <workItem from="1707464201663" duration="9000" />
+      <workItem from="1707464246817" duration="546000" />
+      <workItem from="1707466385924" duration="10000" />
+      <workItem from="1707468561059" duration="405000" />
+      <workItem from="1707508027161" duration="2477000" />
+      <workItem from="1707648865626" duration="7000" />
+      <workItem from="1707651506129" duration="8000" />
+      <workItem from="1707651835236" duration="81000" />
+      <workItem from="1707654349721" duration="12000" />
+      <workItem from="1709365822071" duration="4499000" />
+      <workItem from="1709372109229" duration="247000" />
+      <workItem from="1709375844987" duration="3000" />
+      <workItem from="1709375925030" duration="72000" />
+      <workItem from="1709462266781" duration="693000" />
+      <workItem from="1709463745892" duration="602000" />
+      <workItem from="1710669959044" duration="1281000" />
+      <workItem from="1711195179535" duration="1216000" />
+      <workItem from="1711196498252" duration="7148000" />
+      <workItem from="1711223917547" duration="65000" />
+      <workItem from="1711294254710" duration="13000" />
+      <workItem from="1711296049734" duration="14000" />
+      <workItem from="1711303885755" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="Начальная версия приложения">
       <option name="closed" value="true" />
@@ -139,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704544971339</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Начальная версия приложения. Нет рекомендаций постов по эл почте">
+      <option name="closed" value="true" />
+      <created>1706726451242</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706726451242</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +208,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начальная версия приложения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начальная версия приложения" />
+    <MESSAGE value="Начальная версия приложения. Нет рекомендаций постов по эл почте" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начальная версия приложения. Нет рекомендаций постов по эл почте" />
   </component>
 </project>
