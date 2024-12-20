@@ -2,11 +2,17 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from taggit.managers import TaggableManager
+
+
 
 class PublishedManager(models.Manager):
     #создали новый менеджер
     def get_queryset(self):
         return super().get_queryset().filter(status=Post.Status.PUBLISHED)
+
+# class
+
 
 class Post(models.Model):
     class Status(models.TextChoices):
@@ -35,6 +41,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    tags = TaggableManager()
 
     def get_absolute_url(self):
         return reverse('blog:post_detail',
